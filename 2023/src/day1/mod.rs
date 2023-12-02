@@ -23,7 +23,7 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
     let mut file = File::open("src/day1/input.txt")?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
-    let mut total: i32 = 0;
+    let mut total = 0;
     let digits = [
         "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
         "1", "2", "3", "4", "5", "6", "7", "8", "9"
@@ -52,6 +52,6 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
 
         total += ((((mins.2 % 9) + 1) * 10) + ((maxs.2 % 9) + 1)) as i32;
     }
-    println!("Day 1, Part 2 Solution:\t{}", total);
+    println!("Day 1, Part 2 Solution: {}", total);
     return Ok(total);
 }
