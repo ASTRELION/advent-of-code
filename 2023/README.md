@@ -1,6 +1,6 @@
 # [Advent of Code 2023][aoc]
 
-Written in [Rust][rust].
+Written in [Rust][rust], as a way to learn Rust.
 
 | Problem | Solution |
 |---------|----------|
@@ -18,3 +18,4 @@ Written in [Rust][rust].
 
 [aoc]: https://adventofcode.com/2023
 [rust]: https://www.rust-lang.org
+[rustlings]: https://gitlab.com/ASTRELION/rustlings-solutions
