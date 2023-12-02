@@ -6,6 +6,16 @@ My solutions to the [Advent of Code (AoC)][aoc] challenges.
 |-------|
 | [2023](./2023/) |
 
+```
+        .---_
+       / / /\|
+     / / | \ *
+    /  /  \ \
+   / /  / \  \
+ ./~~~~~~~~~~~\.
+( .",^. -". '.~ )
+ '~~~~~~~~~~~~~'
+```
 
 
 [aoc]: https://adventofcode.com

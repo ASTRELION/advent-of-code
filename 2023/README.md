@@ -4,7 +4,7 @@ Written in [Rust][rust].
 
 | Problem | Solution |
 |---------|----------|
-| [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [Solution](./src/day1/day1.rs) |
+| [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [Solution](./src/day1/mod.rs) |
 
 # Running
 
