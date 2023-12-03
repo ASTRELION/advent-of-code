@@ -5,6 +5,7 @@ Written in [Rust][rust], as a way to learn Rust.
 | Problem | Solution |
 |---------|----------|
 | [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [Solution](./src/day1/mod.rs) |
+| [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2) | [Solution](./src/day2/mod.rs) |
 
 # Running
 
