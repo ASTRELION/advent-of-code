@@ -1,6 +1,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 fn main()
 {
@@ -25,4 +26,7 @@ fn main()
 
     let _ = day3::part1();
     let _ = day3::part2();
+
+    let _ = day4::part1();
+    let _ = day4::part2();
 }
