@@ -67,11 +67,6 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
     for line in contents.lines()
     {
         let game_split: Vec<&str> = line.split(": ").collect();
-        let game_id = game_split[0]
-            .split(" ")
-            .collect::<Vec<&str>>()[1]
-            .parse::<i32>()
-            .unwrap();
         let mut min_cubes = HashMap::from([
             ("red", 1),
             ("green", 1),
