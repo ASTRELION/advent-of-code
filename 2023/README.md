@@ -6,6 +6,7 @@ Written in [Rust][rust], as a way to learn Rust.
 |---------|----------|
 | [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1) | [Solution](./src/day1/mod.rs) |
 | [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2) | [Solution](./src/day2/mod.rs) |
+| [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3) | [Solution](./src/day3/mod.rs) |
 
 # Running
 
