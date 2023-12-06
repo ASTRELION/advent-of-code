@@ -128,3 +128,16 @@ pub fn part2() -> Result<i64, Box<dyn Error>>
     println!("Day 5, Part 2 Solution: {}", min_location);
     return Ok(min_location);
 }
+
+#[cfg(test)]
+mod tests
+{
+    use super::*;
+
+    #[test]
+    fn test_parts()
+    {
+        assert_eq!(part1().ok(), Some(35));
+        assert_eq!(part2().ok(), Some(46));
+    }
+}

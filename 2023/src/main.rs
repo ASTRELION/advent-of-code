@@ -1,10 +1,12 @@
+use std::error::Error;
+
 mod day1;
 mod day2;
 mod day3;
 mod day4;
 mod day5;
 
-fn main()
+fn main() -> Result<(), Box<dyn Error>>
 {
     println!(r#"          .---_
          / / /\|
@@ -33,4 +35,6 @@ fn main()
 
     let _ = day5::part1();
     let _ = day5::part2();
+
+    return Ok(());
 }

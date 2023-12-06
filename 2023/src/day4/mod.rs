@@ -89,3 +89,16 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
     println!("Day 4, Part 2 Solution: {}", total);
     return Ok(total);
 }
+
+#[cfg(test)]
+mod tests
+{
+    use super::*;
+
+    #[test]
+    fn test_parts()
+    {
+        assert_eq!(part1().ok(), Some(13));
+        assert_eq!(part2().ok(), Some(30));
+    }
+}
