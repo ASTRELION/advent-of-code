@@ -8,6 +8,7 @@ Written in [Rust][rust], as a way to learn Rust.
 | [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2) | [Solution](./src/day2/mod.rs) |
 | [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3) | [Solution](./src/day3/mod.rs) |
 | [Day 4: Scratchcards](https://adventofcode.com/2023/day/4) | [Solution](./src/day4/mod.rs) |
+| [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | [Solution](./src/day5/mod.rs) |
 
 # Running
 
