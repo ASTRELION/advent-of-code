@@ -5,6 +5,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn main() -> Result<(), Box<dyn Error>>
 {
@@ -35,6 +36,9 @@ fn main() -> Result<(), Box<dyn Error>>
 
     let _ = day5::part1();
     let _ = day5::part2();
+
+    let _ = day6::part1();
+    let _ = day6::part2();
 
     return Ok(());
 }
