@@ -1,28 +1,19 @@
 stages:
-  - build
   - test
-  - deploy
-
-build:
-  stage: build
-  image: rust:latest
-  script:
-    - cd 2023
-    - echo "Building..."
-    - cargo build --release
+  - run
 
 test:
   stage: test
   image: rust:latest
   script:
     - cd 2023
-    - echo "Testing..."
+    - echo "Testing AoC 2023"
     - cargo test
 
-deploy:
-  stage: deploy
+run:
+  stage: run
   image: rust:latest
   script:
     - cd 2023
-    - echo "Running..."
+    - echo "Running AoC 2023"
     - cargo run
