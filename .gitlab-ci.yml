@@ -2,6 +2,11 @@ stages:
   - test
   - run
 
+cache:
+  key: "$CI_COMMIT_SHA"
+  paths:
+    - "2023/target/"
+
 test:
   stage: test
   image: rust:latest
