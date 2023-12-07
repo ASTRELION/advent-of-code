@@ -62,7 +62,6 @@ pub fn part1() -> Result<i64, Box<dyn Error>>
         min_location = std::cmp::min(min_location, source);
     }
 
-    println!("Day 5, Part 1 Solution: {}", min_location);
     return Ok(min_location);
 }
 
@@ -123,7 +122,6 @@ pub fn part2() -> Result<i64, Box<dyn Error>>
         min_location = std::cmp::min(min_location, range.0);
     }
 
-    println!("Day 5, Part 2 Solution: {}", min_location);
     return Ok(min_location);
 }
 

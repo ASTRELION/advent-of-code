@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 
-pub fn part1() -> Result<i32, Box<dyn Error>>
+pub fn part1() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day4/input.txt")?;
     let mut contents = String::new();
@@ -32,8 +32,7 @@ pub fn part1() -> Result<i32, Box<dyn Error>>
         }
     }
 
-    println!("Day 4, Part 1 Solution: {}", total);
-    return Ok(total);
+    return Ok(total as i64);
 }
 
 fn sum_card(card_map: &HashMap<i32, i32>, index: i32) -> i32
@@ -51,13 +50,13 @@ fn sum_card(card_map: &HashMap<i32, i32>, index: i32) -> i32
         + count.unwrap();
 }
 
-pub fn part2() -> Result<i32, Box<dyn Error>>
+pub fn part2() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day4/input.txt")?;
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
 
-    let mut total;
+    let mut total: i32;
     let mut card_map: HashMap<i32, i32> = HashMap::new();
 
     for line in contents.lines()
@@ -86,8 +85,7 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
     total = card_map.keys().map(|k| sum_card(&card_map, *k)).sum();
     total += card_map.len() as i32;
 
-    println!("Day 4, Part 2 Solution: {}", total);
-    return Ok(total);
+    return Ok(total as i64);
 }
 
 #[cfg(test)]

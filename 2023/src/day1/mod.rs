@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 
-pub fn part1() -> Result<i32, Box<dyn Error>>
+pub fn part1() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day1/input.txt")?;
     let mut contents = String::new();
@@ -14,11 +14,11 @@ pub fn part1() -> Result<i32, Box<dyn Error>>
         let digit2 = line.chars().rev().find(|c| c.is_digit(10)).unwrap();
         total += format!("{}{}", digit1, digit2).parse::<i32>()?;
     }
-    println!("Day 1, Part 1 Solution: {}", total);
-    return Ok(total);
+
+    return Ok(total as i64);
 }
 
-pub fn part2() -> Result<i32, Box<dyn Error>>
+pub fn part2() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day1/input.txt")?;
     let mut contents = String::new();
@@ -52,8 +52,8 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
 
         total += ((((mins.2 % 9) + 1) * 10) + ((maxs.2 % 9) + 1)) as i32;
     }
-    println!("Day 1, Part 2 Solution: {}", total);
-    return Ok(total);
+
+    return Ok(total as i64);
 }
 
 #[cfg(test)]

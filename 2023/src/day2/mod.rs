@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 
-pub fn part1() -> Result<i32, Box<dyn Error>>
+pub fn part1() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day2/input.txt")?;
     let mut contents = String::new();
@@ -52,11 +52,10 @@ pub fn part1() -> Result<i32, Box<dyn Error>>
         }
     }
 
-    println!("Day 2, Part 1 Solution: {}", possible_games);
-    return Ok(possible_games);
+    return Ok(possible_games as i64);
 }
 
-pub fn part2() -> Result<i32, Box<dyn Error>>
+pub fn part2() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day2/input.txt")?;
     let mut contents = String::new();
@@ -92,8 +91,7 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
         power_sum += min_cubes.values().fold(1, |acc, elem| acc * elem);
     }
 
-    println!("Day 2, Part 2 Solution: {}", power_sum);
-    return Ok(power_sum);
+    return Ok(power_sum as i64);
 }
 
 #[cfg(test)]

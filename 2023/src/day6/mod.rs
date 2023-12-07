@@ -10,7 +10,7 @@ fn split_numbers(line: String) -> Vec<i32>
         .collect();
 }
 
-pub fn part1() -> Result<i32, Box<dyn Error>>
+pub fn part1() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day6/input.txt")?;
     let mut contents = String::new();
@@ -42,11 +42,10 @@ pub fn part1() -> Result<i32, Box<dyn Error>>
         total *= delta as i32;
     }
 
-    println!("Day 6, Part 1 Solution: {}", total);
-    return Ok(total);
+    return Ok(total as i64);
 }
 
-pub fn part2() -> Result<i32, Box<dyn Error>>
+pub fn part2() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day6/input.txt")?;
     let mut contents = String::new();
@@ -80,8 +79,7 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
         delta -= 1.0;
     }
 
-    println!("Day 6, Part 2 Solution: {}", delta as i32);
-    return Ok(delta as i32);
+    return Ok(delta as i64);
 }
 
 #[cfg(test)]

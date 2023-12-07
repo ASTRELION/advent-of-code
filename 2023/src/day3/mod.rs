@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 
-pub fn part1() -> Result<i32, Box<dyn Error>>
+pub fn part1() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day3/input.txt")?;
     let mut contents = String::new();
@@ -78,8 +78,7 @@ pub fn part1() -> Result<i32, Box<dyn Error>>
         }
     }
 
-    println!("Day 3, Part 1 Solution: {}", total);
-    return Ok(total);
+    return Ok(total as i64);
 }
 
 pub fn bisect(chars: &Vec<char>, start: usize) -> String
@@ -113,7 +112,7 @@ pub fn bisect(chars: &Vec<char>, start: usize) -> String
     return digit_string;
 }
 
-pub fn part2() -> Result<i32, Box<dyn Error>>
+pub fn part2() -> Result<i64, Box<dyn Error>>
 {
     let mut file = File::open("src/day3/input.txt")?;
     let mut contents = String::new();
@@ -171,8 +170,7 @@ pub fn part2() -> Result<i32, Box<dyn Error>>
         }
     }
 
-    println!("Day 3, Part 2 Solution: {}", total);
-    return Ok(total);
+    return Ok(total as i64);
 }
 
 #[cfg(test)]
