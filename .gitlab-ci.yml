@@ -6,6 +6,7 @@ cache:
   key: "$CI_COMMIT_SHA"
   paths:
     - "2023/target/"
+    - "2023/Cargo.lock"
 
 test:
   stage: test
