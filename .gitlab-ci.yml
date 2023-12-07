@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: rust:latest
+  script:
+    - cd 2023
+    - echo "Building..."
+    - cargo build --release
+
+test:
+  stage: test
+  image: rust:latest
+  script:
+    - cd 2023
+    - echo "Testing..."
+    - cargo test
+
+deploy:
+  stage: deploy
+  image: rust:latest
+  script:
+    - cd 2023
+    - echo "Running..."
+    - cargo run
