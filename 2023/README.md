@@ -18,7 +18,7 @@ Written in [Rust][rust], as a way to learn Rust.
 
 1. Clone the repository
 2. Navigate to the `advent-of-code/2023` directory
-3. Run `cargo run`
+3. Run `cargo run` to run every day's solution, run `cargo run [day number]` to run a specific day or set of days
 
 
 

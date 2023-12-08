@@ -1,4 +1,4 @@
-use std::{error::Error, time::Instant};
+use std::{error::Error, time::Instant, env};
 
 mod day1;
 mod day2;
@@ -33,40 +33,67 @@ fn main() -> Result<(), Box<dyn Error>>
         day7::part1, day7::part2,
     ];
 
-    for p in (0..parts.len()).step_by(2)
-    {
-        let start = Instant::now();
-        let p1 = parts[p]();
-        let time = Instant::now() - start;
-        println!(
-            "{:<24} {:<16} {:<16}",
-            format!(
-                "Day {}, Part 1 Solution:",
-                (p / 2) + 1
-            ),
-            p1.unwrap(),
-            format!(
-                "({:.4}ms)",
-                time.as_nanos() as f64 / 1000000.0
-            )
-        );
+    let mut args: Vec<_> = env::args().collect();
+    args.drain(..1);
 
-        let start = Instant::now();
-        let p2 = parts[p + 1]();
-        let time = Instant::now() - start;
-        println!(
-            "{:<24} {:<16} {:<16}",
-            format!(
-                "Day {}, Part 2 Solution:",
-                (p / 2) + 1
-            ),
-            p2.unwrap(),
-            format!(
-                "({:.4}ms)",
-                time.as_nanos() as f64 / 1000000.0
-            )
-        );
+    for arg in &args
+    {
+        let day: i32 = arg
+            .chars()
+            .filter(|c| c.is_numeric())
+            .collect::<String>()
+            .parse()
+            .unwrap_or(0);
+
+        if day > 0 && day <= parts.len() as i32 / 2
+        {
+            let day = (day - 1) as usize;
+            run_day(day, [parts[day * 2], parts[(day * 2) + 1]]);
+        }
+    }
+
+    if args.len() == 0
+    {
+        for day in 0..parts.len() / 2
+        {
+            run_day(day, [parts[day * 2], parts[(day * 2) + 1]]);
+        }
     }
 
     return Ok(());
+}
+
+fn run_day(day_id: usize, parts: [fn() -> Result<i64, Box<dyn Error>>; 2])
+{
+    let start = Instant::now();
+    let p1 = parts[0]();
+    let time = Instant::now() - start;
+    println!(
+        "{:<24} {:<16} {:<16}",
+        format!(
+            "Day {}, Part 1 Solution:",
+            day_id + 1
+        ),
+        p1.unwrap(),
+        format!(
+            "({:.4}ms)",
+            time.as_nanos() as f64 / 1000000.0
+        )
+    );
+
+    let start = Instant::now();
+    let p2 = parts[1]();
+    let time = Instant::now() - start;
+    println!(
+        "{:<24} {:<16} {:<16}",
+        format!(
+            "Day {}, Part 2 Solution:",
+            day_id + 1
+        ),
+        p2.unwrap(),
+        format!(
+            "({:.4}ms)",
+            time.as_nanos() as f64 / 1000000.0
+        )
+    );
 }
