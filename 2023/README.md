@@ -10,6 +10,7 @@ Written in [Rust][rust], as a way to learn Rust.
 | [Day 4: Scratchcards](https://adventofcode.com/2023/day/4) | [Solution](./src/day4/mod.rs) |
 | [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | [Solution](./src/day5/mod.rs) |
 | [Day 6: Wait For It](https://adventofcode.com/2023/day/6) | [Solution](./src/day6/mod.rs) |
+| [Day 7: Camel Cards](https://adventofcode.com/2023/day/7) | [Solution](./src/day7/mod.rs) |
 
 # Running
 
