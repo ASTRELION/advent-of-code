@@ -1,10 +1,19 @@
-This repository contains solutions to problems from Advent of Code. The problem statements and individual input sets are provided by Advent of Code (https://adventofcode.com/) and are purposefully not included in this repository.
+This repository contains solutions to problems from Advent of Code. The problem
+ statements and individual input sets are provided by Advent of Code
+ (https://adventofcode.com/) and are purposefully not included in this
+ repository.
 
-The problem statements and individual input sets provided by Advent of Code are subject to their own terms and conditions. Refer to Advent of Code's website for more information.
+The problem statements and individual input sets provided by Advent of Code are
+ subject to their own terms and conditions. Refer to Advent of Code's website
+  for more information.
 
-The input sets included in this repository (typically input.txt) are restricted to only the example input set given in each problem description and will never contain actual answers.
+The input sets included in this repository (typically input.txt) are restricted
+ to only the example input set given in each problem description and will never
+ contain actual answers.
 
-The solutions in this repository, found in the source code files, are authored by ASTRELION and are released under the GNU Affero General Public License v3.0 (AGPL-3.0) described below.
+The solutions in this repository, found in the source code files, are authored
+ by ASTRELION and are released under the GNU Affero General Public License v3.0
+ (AGPL-3.0) described below.
 
 
 
