@@ -12,6 +12,7 @@ Written in [Rust][rust], as a way to learn Rust.
 | [Day 6: Wait For It](https://adventofcode.com/2023/day/6) | [Solution](./src/day6/mod.rs) |
 | [Day 7: Camel Cards](https://adventofcode.com/2023/day/7) | [Solution](./src/day7/mod.rs) |
 | [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8) | [Solution](./src/day8/mod.rs) |
+| [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | [Solution](./src/day9/mod.rs) |
 
 # Running
 
