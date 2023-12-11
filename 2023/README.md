@@ -14,6 +14,7 @@ Written in [Rust][rust], as a way to learn Rust.
 | [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8) | [Solution](./src/day8/mod.rs) |
 | [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9) | [Solution](./src/day9/mod.rs) |
 | [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10) | [Solution](./src/day10/mod.rs) |
+| [Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11) | [Solution](./src/day11/mod.rs) |
 
 # Running
 
